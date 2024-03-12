@@ -71,6 +71,22 @@ const docTemplate = `{
                         "name": "repassword",
                         "in": "query",
                         "required": true
+                    },
+                    {
+                        "maxLength": 100,
+                        "type": "string",
+                        "description": "email",
+                        "name": "email",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "maxLength": 100,
+                        "type": "string",
+                        "description": "phone",
+                        "name": "phone",
+                        "in": "query",
+                        "required": true
                     }
                 ],
                 "responses": {

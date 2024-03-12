@@ -6,6 +6,8 @@ import (
 	"awesomeProject/entity"
 	"errors"
 
+	"github.com/asaskevich/govalidator"
+
 	"gorm.io/gorm"
 
 	"github.com/gin-gonic/gin"
@@ -21,6 +23,8 @@ import (
 // @Param name query string true "用户名" maxlength(100)
 // @Param password query string true "密码" maxlength(100)
 // @Param repassword query string true "确认密码" maxlength(100)
+// @Param email query string true "email" maxlength(100)
+// @Param phone query string true "phone" maxlength(100)
 // @Success 200 {string} json{"code","message"}
 // @Failure 400 {string} json{"code","message"}
 // @Router /user/create_user [post]
@@ -29,6 +33,8 @@ func CreateUser(ctx *gin.Context) {
 	name := ctx.Query("name")
 	password := ctx.Query("password")
 	repassword := ctx.Query("repassword")
+	email := ctx.Query("email")
+	phone := ctx.Query("phone")
 	if password != repassword {
 		ctx.JSON(400, gin.H{"message": "两次密码不一致"})
 		return
@@ -37,6 +43,8 @@ func CreateUser(ctx *gin.Context) {
 		UID:      uid,
 		Name:     name,
 		Password: password,
+		Email:    email,
+		Phone:    phone,
 	}
 	var foundUser entity.User
 	dao.DB.Where("UID=?", uid).First(&foundUser)
@@ -44,6 +52,13 @@ func CreateUser(ctx *gin.Context) {
 		ctx.JSON(400, "UID重复，请重试")
 		return
 	}
+
+	requestValid, _ := govalidator.ValidateStruct(user)
+	if !requestValid {
+		ctx.JSON(400, "邮箱或者手机号不合法，请检查输入")
+		return
+	}
+
 	if err := dao.DB.Model(&entity.User{}).Create(&user).Error; err != nil {
 		panic("创建用户失败,err==" + err.Error())
 	}

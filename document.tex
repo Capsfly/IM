@@ -23,6 +23,23 @@
 
 \begin{document}
 	
+	\section{邮箱和手机号的校验}
+	众所周知，邮箱应该是类似于xxx@hotmail.com的形式，手机号应该是186xxxxxxx这样的形式，因为在内存中我们采取的是用string来存储，因此在注册的时候，应该进行校验。在这里我们采用的是正则校验表达式。同时看到下图还有几个问题：
+	\begin{enumerate}
+		\item UID应该全为数字，类似于QQ号
+		\item 密码和确认密码不应该明文出现，保护隐私
+	\end{enumerate}
+	
+	\includegraphics{16.png}
+	
+	\includegraphics{17.png}
+	
+	正则表达式截图：
+	
+	\includegraphics{18.png}
+	
+	
+	
 	\section{实现分布式唯一全局ID(雪花算法)}
 	待更新
 	

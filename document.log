@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.8)  12 MAR 2024 17:01
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.8)  12 MAR 2024 21:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -597,128 +597,151 @@ Package hyperref Info: Link coloring OFF on input line 24.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-File: imgs//3.png Graphic file (type bmp)
-<imgs//3.png>
-File: imgs//4.png Graphic file (type bmp)
-<imgs//4.png>
 
-Overfull \hbox (43.89194pt too wide) in paragraph at lines 32--35
-[][]
+Overfull \hbox (1.96805pt too wide) in paragraph at lines 27--28
+[]\TU/SimSun(0)/m/n/12 众 所 周 知，|  邮 箱 应 该 是 类 似 于 \TU/lmr/m/n/12 xxx@hotmail.co
+m \TU/SimSun(0)/m/n/12 的 形 式，|  手 机 号 应 该 是 \TU/lmr/m/n/12 186xxxxxxx
  []
 
+File: imgs//16.png Graphic file (type bmp)
+<imgs//16.png>
 
-Overfull \hbox (0.61832pt too wide) in paragraph at lines 32--35
-[]
+Overfull \hbox (702.50778pt too wide) in paragraph at lines 33--34
+[][] 
  []
 
-File: imgs//5.png Graphic file (type bmp)
-<imgs//5.png>
+File: imgs//17.png Graphic file (type bmp)
+<imgs//17.png>
 
-Overfull \hbox (158.32904pt too wide) in paragraph at lines 36--37
+Overfull \hbox (162.8463pt too wide) in paragraph at lines 35--36
 [][] 
  []
 
 [1
 
 ]
+File: imgs//18.png Graphic file (type bmp)
+<imgs//18.png>
+
+Overfull \hbox (378.46999pt too wide) in paragraph at lines 39--40
+[][] 
+ []
+
+File: imgs//3.png Graphic file (type bmp)
+<imgs//3.png>
+File: imgs//4.png Graphic file (type bmp)
+<imgs//4.png>
+
+Overfull \hbox (43.89194pt too wide) in paragraph at lines 49--52
+[][]
+ []
+
+
+Overfull \hbox (0.61832pt too wide) in paragraph at lines 49--52
+[]
+ []
+
+[2]
+File: imgs//5.png Graphic file (type bmp)
+<imgs//5.png>
+
+Overfull \hbox (158.32904pt too wide) in paragraph at lines 53--54
+[][] 
+ []
+
 File: imgs//6.png Graphic file (type bmp)
 <imgs//6.png>
 
-Overfull \hbox (279.69264pt too wide) in paragraph at lines 41--42
+Overfull \hbox (279.69264pt too wide) in paragraph at lines 58--59
 [][] 
  []
 
 File: imgs//7.png Graphic file (type bmp)
 <imgs//7.png>
-[2]
+[3]
 File: imgs//8.png Graphic file (type bmp)
 <imgs//8.png>
 
-Overfull \hbox (64.67133pt too wide) in paragraph at lines 58--59
-[][] 
- []
-
-File: imgs//9.png Graphic file (type bmp)
-<imgs//9.png>
-
-Overfull \hbox (736.23657pt too wide) in paragraph at lines 61--63
-[][]
- []
-
-[3]
-File: imgs//10.png Graphic file (type bmp)
-<imgs//10.png>
-
-Overfull \hbox (174.04652pt too wide) in paragraph at lines 64--65
+Overfull \hbox (64.67133pt too wide) in paragraph at lines 75--76
 [][] 
  []
 
 [4]
-File: imgs//11.png Graphic file (type bmp)
-<imgs//11.png>
+File: imgs//9.png Graphic file (type bmp)
+<imgs//9.png>
 
-Overfull \hbox (39.12679pt too wide) in paragraph at lines 68--69
-[][] 
+Overfull \hbox (736.23657pt too wide) in paragraph at lines 78--80
+[][]
  []
 
 [5]
+File: imgs//10.png Graphic file (type bmp)
+<imgs//10.png>
+
+Overfull \hbox (174.04652pt too wide) in paragraph at lines 81--82
+[][] 
+ []
+
+[6]
+File: imgs//11.png Graphic file (type bmp)
+<imgs//11.png>
+
+Overfull \hbox (39.12679pt too wide) in paragraph at lines 85--86
+[][] 
+ []
+
+[7]
 File: imgs//1.png Graphic file (type bmp)
 <imgs//1.png>
 File: imgs//2.png Graphic file (type bmp)
 <imgs//2.png>
 
-Overfull \hbox (814.73453pt too wide) in paragraph at lines 85--87
+Overfull \hbox (814.73453pt too wide) in paragraph at lines 102--104
 [][] [] 
  []
 
-[6]
+[8]
 File: imgs//12.png Graphic file (type bmp)
 <imgs//12.png>
 
-Overfull \hbox (686.84802pt too wide) in paragraph at lines 106--107
+Overfull \hbox (686.84802pt too wide) in paragraph at lines 123--124
 [][] 
  []
 
-[7]
+[9]
 File: imgs//13.png Graphic file (type bmp)
 <imgs//13.png>
 
-Overfull \hbox (247.16843pt too wide) in paragraph at lines 108--109
+Overfull \hbox (247.16843pt too wide) in paragraph at lines 125--126
 [][] 
  []
 
 File: imgs//14.png Graphic file (type bmp)
 <imgs//14.png>
 
-Overfull \hbox (189.94989pt too wide) in paragraph at lines 112--113
+Overfull \hbox (189.94989pt too wide) in paragraph at lines 129--130
 [][] 
  []
 
-[8]
+[10]
 File: imgs//15.png Graphic file (type bmp)
 <imgs//15.png>
 
-Overfull \hbox (259.21442pt too wide) in paragraph at lines 116--117
+Overfull \hbox (259.21442pt too wide) in paragraph at lines 133--134
 [][] 
  []
 
-[9] (./document.aux)
-
-Package rerunfilecheck Warning: File `document.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `document.out':
-(rerunfilecheck)             Before: 99C5417F1CE293E848FA5CE4A35A1B78;1404
-(rerunfilecheck)             After:  25F3948260EDD23D753E4B44F0BF1056;1468.
+[11] (./document.aux)
+Package rerunfilecheck Info: File `document.out' has not changed.
+(rerunfilecheck)             Checksum: D48E50133E25FA1F332005029F6AE16F;1584.
  ) 
 Here is how much of TeX's memory you used:
- 16011 strings out of 476683
- 344605 string characters out of 5807576
- 1852012 words of memory out of 5000000
- 36044 multiletter control sequences out of 15000+600000
+ 16041 strings out of 476683
+ 345052 string characters out of 5807576
+ 1851012 words of memory out of 5000000
+ 36071 multiletter control sequences out of 15000+600000
  514441 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,384b,426s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,384b,390s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on document.pdf (9 pages).
+Output written on document.pdf (11 pages).
