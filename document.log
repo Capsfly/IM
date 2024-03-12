@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.8)  10 MAR 2024 17:01
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.8)  12 MAR 2024 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -602,46 +602,46 @@ File: imgs//3.png Graphic file (type bmp)
 File: imgs//4.png Graphic file (type bmp)
 <imgs//4.png>
 
-Overfull \hbox (43.89194pt too wide) in paragraph at lines 28--31
+Overfull \hbox (43.89194pt too wide) in paragraph at lines 32--35
 [][]
  []
 
 
-Overfull \hbox (0.61832pt too wide) in paragraph at lines 28--31
+Overfull \hbox (0.61832pt too wide) in paragraph at lines 32--35
 []
  []
 
 File: imgs//5.png Graphic file (type bmp)
 <imgs//5.png>
 
-Overfull \hbox (158.32904pt too wide) in paragraph at lines 32--33
-[][] 
- []
-
-File: imgs//6.png Graphic file (type bmp)
-<imgs//6.png>
-
-Overfull \hbox (279.69264pt too wide) in paragraph at lines 37--38
+Overfull \hbox (158.32904pt too wide) in paragraph at lines 36--37
 [][] 
  []
 
 [1
 
 ]
+File: imgs//6.png Graphic file (type bmp)
+<imgs//6.png>
+
+Overfull \hbox (279.69264pt too wide) in paragraph at lines 41--42
+[][] 
+ []
+
 File: imgs//7.png Graphic file (type bmp)
 <imgs//7.png>
- [2]
+[2]
 File: imgs//8.png Graphic file (type bmp)
 <imgs//8.png>
 
-Overfull \hbox (64.67133pt too wide) in paragraph at lines 54--55
+Overfull \hbox (64.67133pt too wide) in paragraph at lines 58--59
 [][] 
  []
 
 File: imgs//9.png Graphic file (type bmp)
 <imgs//9.png>
 
-Overfull \hbox (736.23657pt too wide) in paragraph at lines 57--59
+Overfull \hbox (736.23657pt too wide) in paragraph at lines 61--63
 [][]
  []
 
@@ -649,7 +649,7 @@ Overfull \hbox (736.23657pt too wide) in paragraph at lines 57--59
 File: imgs//10.png Graphic file (type bmp)
 <imgs//10.png>
 
-Overfull \hbox (174.04652pt too wide) in paragraph at lines 60--61
+Overfull \hbox (174.04652pt too wide) in paragraph at lines 64--65
 [][] 
  []
 
@@ -657,7 +657,7 @@ Overfull \hbox (174.04652pt too wide) in paragraph at lines 60--61
 File: imgs//11.png Graphic file (type bmp)
 <imgs//11.png>
 
-Overfull \hbox (39.12679pt too wide) in paragraph at lines 64--65
+Overfull \hbox (39.12679pt too wide) in paragraph at lines 68--69
 [][] 
  []
 
@@ -667,7 +667,7 @@ File: imgs//1.png Graphic file (type bmp)
 File: imgs//2.png Graphic file (type bmp)
 <imgs//2.png>
 
-Overfull \hbox (814.73453pt too wide) in paragraph at lines 81--83
+Overfull \hbox (814.73453pt too wide) in paragraph at lines 85--87
 [][] [] 
  []
 
@@ -675,7 +675,7 @@ Overfull \hbox (814.73453pt too wide) in paragraph at lines 81--83
 File: imgs//12.png Graphic file (type bmp)
 <imgs//12.png>
 
-Overfull \hbox (686.84802pt too wide) in paragraph at lines 102--103
+Overfull \hbox (686.84802pt too wide) in paragraph at lines 106--107
 [][] 
  []
 
@@ -683,14 +683,14 @@ Overfull \hbox (686.84802pt too wide) in paragraph at lines 102--103
 File: imgs//13.png Graphic file (type bmp)
 <imgs//13.png>
 
-Overfull \hbox (247.16843pt too wide) in paragraph at lines 104--105
+Overfull \hbox (247.16843pt too wide) in paragraph at lines 108--109
 [][] 
  []
 
 File: imgs//14.png Graphic file (type bmp)
 <imgs//14.png>
 
-Overfull \hbox (189.94989pt too wide) in paragraph at lines 108--109
+Overfull \hbox (189.94989pt too wide) in paragraph at lines 112--113
 [][] 
  []
 
@@ -698,13 +698,19 @@ Overfull \hbox (189.94989pt too wide) in paragraph at lines 108--109
 File: imgs//15.png Graphic file (type bmp)
 <imgs//15.png>
 
-Overfull \hbox (259.21442pt too wide) in paragraph at lines 112--113
+Overfull \hbox (259.21442pt too wide) in paragraph at lines 116--117
 [][] 
  []
 
 [9] (./document.aux)
-Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: CC638DF5139E0E0842BB4C6952138532;1294.
+
+Package rerunfilecheck Warning: File `document.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `document.out':
+(rerunfilecheck)             Before: 99C5417F1CE293E848FA5CE4A35A1B78;1404
+(rerunfilecheck)             After:  25F3948260EDD23D753E4B44F0BF1056;1468.
  ) 
 Here is how much of TeX's memory you used:
  16011 strings out of 476683
@@ -713,6 +719,6 @@ Here is how much of TeX's memory you used:
  36044 multiletter control sequences out of 15000+600000
  514441 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,384b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,384b,426s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on document.pdf (9 pages).
