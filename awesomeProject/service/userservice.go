@@ -4,7 +4,10 @@ import (
 	"awesomeProject/dao"
 	_ "awesomeProject/docs"
 	"awesomeProject/entity"
+	"awesomeProject/utils"
 	"errors"
+	"fmt"
+	"math/rand"
 
 	"github.com/asaskevich/govalidator"
 
@@ -35,16 +38,19 @@ func CreateUser(ctx *gin.Context) {
 	repassword := ctx.Query("repassword")
 	email := ctx.Query("email")
 	phone := ctx.Query("phone")
+	randomNum := fmt.Sprintf("%06d", rand.Int31())
+
 	if password != repassword {
 		ctx.JSON(400, gin.H{"message": "两次密码不一致"})
 		return
 	}
 	user := entity.User{
-		UID:      uid,
-		Name:     name,
-		Password: password,
-		Email:    email,
-		Phone:    phone,
+		UID:       uid,
+		Name:      name,
+		Password:  utils.MakePassword(password, randomNum),
+		Email:     email,
+		Phone:     phone,
+		RandomNum: randomNum,
 	}
 	var foundUser entity.User
 	dao.DB.Where("UID=?", uid).First(&foundUser)
