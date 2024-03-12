@@ -31,7 +31,7 @@ const docTemplate = `{
             }
         },
         "/user/create_user": {
-            "get": {
+            "post": {
                 "produces": [
                     "application/json"
                 ],
@@ -40,6 +40,14 @@ const docTemplate = `{
                 ],
                 "summary": "创建用户",
                 "parameters": [
+                    {
+                        "maxLength": 100,
+                        "type": "string",
+                        "description": "UID",
+                        "name": "UID",
+                        "in": "query",
+                        "required": true
+                    },
                     {
                         "maxLength": 100,
                         "type": "string",
@@ -71,6 +79,12 @@ const docTemplate = `{
                         "schema": {
                             "type": "string"
                         }
+                    },
+                    "400": {
+                        "description": "code\",\"message\"}",
+                        "schema": {
+                            "type": "string"
+                        }
                     }
                 }
             }
@@ -86,9 +100,9 @@ const docTemplate = `{
                 "summary": "删除用户",
                 "parameters": [
                     {
-                        "type": "integer",
-                        "description": "id",
-                        "name": "id",
+                        "type": "string",
+                        "description": "UID",
+                        "name": "UID",
                         "in": "query",
                         "required": true
                     },
@@ -136,9 +150,9 @@ const docTemplate = `{
                 "summary": "修改用户",
                 "parameters": [
                     {
-                        "type": "integer",
-                        "description": "id",
-                        "name": "id",
+                        "type": "string",
+                        "description": "UID",
+                        "name": "UID",
                         "in": "query",
                         "required": true
                     },

@@ -2,14 +2,17 @@ package dao
 
 import (
 	"awesomeProject/entity"
-	"fmt"
+
 	"gorm.io/gorm"
 )
 
 var DB *gorm.DB
 
-func Create_User(user entity.User) *gorm.DB {
-	fmt.Println("CreateUser")
+func FindUser(UserPtr *entity.User) *gorm.DB {
+	return DB.Where(UserPtr)
+}
+
+func CreateUser(user entity.User) *gorm.DB {
 	return DB.Create(&user)
 }
 
@@ -17,6 +20,6 @@ func DeleteUser(user entity.User) *gorm.DB {
 	return DB.Delete(&user)
 }
 
-func UpdateUser(user entity.User) *gorm.DB {
-	return DB.Model(&user).Updates(entity.User{Name: user.Name, Password: user.Password})
+func UpdateUser(oldUserPtr *entity.User, newUserPtr *entity.User) *gorm.DB {
+	return DB.Model(oldUserPtr).Updates(newUserPtr)
 }
