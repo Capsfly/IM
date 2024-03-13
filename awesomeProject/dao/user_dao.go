@@ -3,10 +3,12 @@ package dao
 import (
 	"awesomeProject/entity"
 
+	"github.com/redis/go-redis/v9"
 	"gorm.io/gorm"
 )
 
 var DB *gorm.DB
+var RDS *redis.Client
 
 func FindUser(UserPtr *entity.User) *gorm.DB {
 	return DB.Where(UserPtr)

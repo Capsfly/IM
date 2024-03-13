@@ -3,13 +3,16 @@ package utils
 import (
 	"awesomeProject/dao"
 	"awesomeProject/entity"
+	"log"
+	"os"
+	"time"
+
+	"github.com/redis/go-redis/v9"
+
 	"github.com/spf13/viper"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
-	"log"
-	"os"
-	"time"
 )
 
 func InitConfig() {
@@ -36,4 +39,15 @@ func InitMysql() {
 	}
 	dao.DB = temp_db
 	dao.DB.AutoMigrate(&entity.User{})
+}
+
+func InitRedis() {
+	dao.RDS = redis.NewClient(&redis.Options{
+		Addr:         viper.GetString("redis.addr"),
+		Password:     viper.GetString("redis.password"),
+		DB:           viper.GetInt("redis.DB"),
+		PoolSize:     viper.GetInt("redis.poolSize"),
+		MinIdleConns: viper.GetInt("redis.minIdleConn"),
+	})
+
 }

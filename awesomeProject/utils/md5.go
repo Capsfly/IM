@@ -19,10 +19,10 @@ func MD5Encode(data string) string {
 	return strings.ToUpper(MD5Encode(data))
 }
 
-func MakePassword(plainpwd string, randomNum string) string {
-	return Md5Encode(plainpwd + randomNum)
+func MakePassword(plainPwd string, randomNum string) string {
+	return Md5Encode(plainPwd + randomNum)
 }
 
-func ValidPassword(plainpwd string, randomNum string, password string) bool {
-	return Md5Encode(plainpwd+randomNum) == password
+func ValidPassword(plainPwd string, randomNum string, password string) bool {
+	return Md5Encode(plainPwd+randomNum) == password
 }

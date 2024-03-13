@@ -16,7 +16,7 @@
 
 ## 需要什么？
 
-H5 ajax 获取音频、websocket发送信息、js/vue单页app
+H5 ajax 获取音频、websocket发送信息、js/vue单页app、redis提高并发
 
 websocket组件转发信息、channel/goroutine提高并发性、gin、template、swagger
 

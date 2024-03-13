@@ -22,7 +22,10 @@
 }
 
 \begin{document}
-	
+	\section{redis的引入}
+	为什么需要引入redis：对于单机，使用websocket可以达到十万的并发。如果想要达到百万并发就需要引入redis了。
+	\section{token的引入}
+	待实现(登陆需要引入token)
 	\section{邮箱和手机号的校验}
 	众所周知，邮箱应该是类似于xxx@hotmail.com的形式，手机号应该是186xxxxxxx这样的形式，因为在内存中我们采取的是用string来存储，因此在注册的时候，应该进行校验。在这里我们采用的是正则校验表达式。同时看到下图还有几个问题：
 	\begin{enumerate}
