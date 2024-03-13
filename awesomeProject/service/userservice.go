@@ -8,8 +8,11 @@ import (
 	"errors"
 	"fmt"
 	"math/rand"
+	"net/http"
+	"time"
 
 	"github.com/asaskevich/govalidator"
+	"github.com/gorilla/websocket"
 
 	"gorm.io/gorm"
 
@@ -133,4 +136,46 @@ func UpdateUser(ctx *gin.Context) {
 		panic("更新模块查找用户失败,err=" + err.Error())
 	}
 	ctx.JSON(200, "更新用户信息成功")
+}
+
+var upgrader = websocket.Upgrader{
+	ReadBufferSize:  1024,
+	WriteBufferSize: 1024,
+	CheckOrigin:     checkOrigin,
+}
+
+func checkOrigin(r *http.Request) bool {
+	return true
+}
+
+var upGrade = websocket.Upgrader{
+	CheckOrigin: func(r *http.Request) bool {
+		return true
+	},
+}
+
+func SendMsg(ctx *gin.Context) {
+	ws, err := upGrade.Upgrade(ctx.Writer, ctx.Request, nil)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer func(ws *websocket.Conn) {
+		if err := ws.Close(); err != nil {
+			panic(err)
+		}
+	}(ws)
+	MsgHandler(ws, ctx)
+}
+
+func MsgHandler(ws *websocket.Conn, ctx *gin.Context) {
+	msg, err := utils.Subscribe(ctx, utils.PublishKey)
+	if err != nil {
+		panic(err)
+	}
+	tm := time.Now().Format("2006-01-02 15:04:05")
+	str := fmt.Sprintf("[ws][%s]:%s", tm, msg)
+	if err := ws.WriteMessage(1, []byte(str)); err != nil {
+		panic(err)
+	}
 }

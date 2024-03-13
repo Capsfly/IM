@@ -8,7 +8,7 @@ import (
 )
 
 var DB *gorm.DB
-var RDS *redis.Client
+var RDB *redis.Client
 
 func FindUser(UserPtr *entity.User) *gorm.DB {
 	return DB.Where(UserPtr)
