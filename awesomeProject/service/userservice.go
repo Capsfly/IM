@@ -179,3 +179,8 @@ func MsgHandler(ws *websocket.Conn, ctx *gin.Context) {
 		panic(err)
 	}
 }
+
+func SendUserMsg(ctx *gin.Context) {
+	entity.Chat(ctx.Writer, ctx.Request)
+
+}

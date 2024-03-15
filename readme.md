@@ -12,11 +12,11 @@
 
 ## 项目亮点
 
-100w并发高性能网络通信、分布式序列号雪花算法（保证ID全局唯一性）
+100w并发高性能网络通信、分布式序列号雪花算法（保证ID全局唯一性），前后端分离
 
 ## 需要什么？
 
-H5 ajax 获取音频、websocket发送信息、js/vue单页app、redis提高并发
+H5 ajax 获取音频、websocket发送信息、react、redis提高并发、token
 
 websocket组件转发信息、channel/goroutine提高并发性、gin、template、swagger
 

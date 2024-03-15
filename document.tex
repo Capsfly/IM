@@ -22,8 +22,19 @@
 }
 
 \begin{document}
-	\section{将http升级为websocket}
-	待实现
+	\section{go语言死锁的讨论}
+	\section{发送消息流程设计}
+	\subsection{流程图}
+	\subsection{引入了redis和不引入redis的对比}
+	\subsection{使用tcp的效率}
+	\subsection{使用udp的效率}
+	\subsection{使用QUIC的效率}
+	\section{将http协议升级为websocket协议}
+	待补充
+	\section{发送消息的设计和实现}
+	需要：发送者ID，接收者ID，消息类型(文字、音频、图片等)，消息的内容(说了什么话、发了什么图片)，发送类型
+	()
+	
 	\section{redis的引入}
 	
 	为什么需要引入redis：对于单机，使用websocket可以达到十万的并发。如果
